@@ -29,7 +29,7 @@ export default function Page() {
       </div>
       {/* CONTENT */}
       <div className="flex justify-between flex-row px-10 text-sm">
-        <div className='w-1/3 flex flex-col gap-6'>
+        <div className='w-2/5 flex flex-col gap-6'>
           <div>
             <p className="mb-2 text-black/60">March 10, 2025</p>
             <p className="text-black/60">We are backed by <Link href="https://www.ycombinator.com/" className='underline underline-offset-4'>Y Combinator</Link> (X25) and <Link href="https://corylevy.com/" className='underline underline-offset-4'>Cory Levy</Link> for our pre-seed.</p>
@@ -48,14 +48,17 @@ export default function Page() {
           </div>
         </div>
 
-        <div className='w-1/3'>
+        <div className='flex flex-col gap-8 w-2/5'>
           <div>
             <p className='mb-2'>Try out our current home for schools:</p>
             <p className="text-black/80">We've began experimenting with this new medium by working with one of the most powerful forms of connections: Alumni Networks. Begin by searching for people who've experienced your education.</p>
           </div>
-          <div className='flex flex-row gap-8'>
-            <SchoolCard schoolImage="stanford" schoolName="stanford"></SchoolCard>
-            <SchoolCard schoolImage="berkeley" schoolName="berkeley"></SchoolCard>
+          <div className='flex flex-row flex-wrap gap-5'>
+            <SchoolCard schoolImage="stanford" schoolName="Stanford"></SchoolCard>
+            <SchoolCard schoolImage="berkeley" schoolName="Berkeley"></SchoolCard>
+            <SchoolCard schoolImage="yale" schoolName="Yale"></SchoolCard>
+            <SchoolCard schoolImage="waterloo" schoolName="Waterloo"></SchoolCard>
+            <SchoolCard schoolImage="berkeley" schoolName="Want this at your school?" blurred={true}></SchoolCard>
           </div>
         </div>
       </div>
